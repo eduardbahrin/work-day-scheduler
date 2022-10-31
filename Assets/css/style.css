@@ -3,7 +3,13 @@ body {
   font-size: 16px;
   line-height: 1;
 }
+button {
+  border: none;
+}
 
+button:focus {
+  outline: none;
+}
 textarea {
   background: transparent;
   border: none;
