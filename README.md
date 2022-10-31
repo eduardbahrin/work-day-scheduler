@@ -10,7 +10,7 @@ This web application is a simple daily scheduler designed to help people organis
 
 ## Usage
 
-- Each time-block is colour-coded according to whether the time is in the past (grey), present (blue), or future (yellow). 
+- Each time-block is colour-coded according to whether the time is in the past (grey), present (red), or future (green). 
 - Users can save events by inputting text in a time-block and then clicking the save button.
 - Events can be removed by deleting text and then clicking the save button.
 
