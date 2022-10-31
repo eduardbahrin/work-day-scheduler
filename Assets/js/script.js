@@ -1,5 +1,7 @@
+// current real-time day displaying
 currentDay = $("#currentDay").text(moment().format("dddd, MMMM D, YYYY"));
-
+// timeblocks displaying 9-5pm.
+// getting current times and compare them to timeblocks
 function getCurrentClass(rowHour) {
   var currentTime = moment();
   var rowTime = moment(currentTime);
@@ -14,7 +16,7 @@ function getCurrentClass(rowHour) {
     return "future";
   }
 }
-
+// setting the color for each timeblock based on results
 function setColor(hour) {
   var row = $("#" + hour);
   var className = getCurrentClass(hour);
@@ -33,7 +35,7 @@ function saveBlock(id) {
 
   localStorage.setItem("blockContent" + id, blockContent);
 }
-
+// saved data in timeblocks don't disappear after reloading the page
 function loadBlock(id) {
   var blockContent = localStorage.getItem("blockContent" + id);
   $("#" + id).val(blockContent);
